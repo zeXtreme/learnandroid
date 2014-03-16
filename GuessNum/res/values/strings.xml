@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Guess Num</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="start">开始游戏</string>
+    <string name="title">大家来猜数</string>
+    <string name="exit">退出游戏</string>
+    <string name="hint">请在框中输入你猜的数字</string>
+    <string name="initresult">0 A 0 B</string>
+    <string name="gametitle">你已经猜了0次</string>
+    <string name="desc_a">A表示位置和数字都正确的位数之和</string>
+    <string name="desc_b">B代表正确的数字的个数</string>
+    <string name="submit">提交</string>
+    <string name="desc_game">已经随机生成了一个数位不重复的四位数，请你来猜猜它是多少？</string>
+    <string name="giveup">重新生成</string>
+    <string name="view">生成的数字是：????</string>
+
+</resources>
