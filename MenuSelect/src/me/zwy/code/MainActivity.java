@@ -44,48 +44,20 @@ public class MainActivity extends Activity {
 		String str = "";
 		switch(item.getItemId()){
 		case 3:
-			item.setChecked(true);
-			gender = "男";
-			et.append("您选择的性别为：" + gender + "。\n");
-			break;
 		case 4:
 			item.setChecked(true);
-			gender = "女";
+			gender = item.getTitle().toString();
 			et.append("您选择的性别为：" + gender + "。\n");
 			break;
 		case 5:
-			if(item.isChecked()){
-				item.setChecked(false);
-				hobby.remove("游泳");
-			}else{
-				item.setChecked(true);
-				hobby.add("游泳");
-			}
-			for(String s : hobby){
-				str = str + s + "、";
-			}
-			et.append("您选择的性别为：" + gender + ",您选择的爱好为：" + str + "\n");
-			break;
 		case 6:
-			if(item.isChecked()){
-				item.setChecked(false);
-				hobby.remove("唱歌");
-			}else{
-				item.setChecked(true);
-				hobby.add("唱歌");
-			}
-			for(String s : hobby){
-				str = str + s + "、";
-			}
-			et.append("您选择的性别为：" + gender + ",您选择的爱好为：" + str + "\n");
-			break;
 		case 7:
 			if(item.isChecked()){
 				item.setChecked(false);
-				hobby.remove("写java程序");
+				hobby.remove(item.getTitle().toString());
 			}else{
 				item.setChecked(true);
-				hobby.add("写java程序");
+				hobby.add(item.getTitle().toString());
 			}
 			for(String s : hobby){
 				str = str + s + "、";
